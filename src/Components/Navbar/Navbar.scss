@@ -1,0 +1,50 @@
+@import '../../App.scss';
+
+.navbar{
+    position: relative;
+    width: $width;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 999999;
+
+    img{
+        width: calc(($width) * 0.15);
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: calc(($width) * 0.4);
+
+        .link{
+            text-decoration: none;
+            color: $secondary-color;
+
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+
+    input{
+        padding: 0.6rem 1.5rem;
+        outline: none;
+        border: none;
+        resize: none;
+        background: $accent-color;
+        color: $primary-color;
+        border-radius: $border-radius;
+        font-family: $font;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover{
+            color: $secondary-color;
+            background: $other-color;
+        }
+    }
+}

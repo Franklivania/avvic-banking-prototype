@@ -1,0 +1,89 @@
+@import '../../../App.scss';
+
+.card{
+    position: relative;
+    height: calc(($height) * 0.5);
+    width: calc(($width) * 0.2);
+
+    .box{
+        position: relative;
+        height: calc(($height) * 0.6);
+        width: calc(($width) * 0.4);
+        background: $dark-gray;
+        color: $secondary-color;
+
+        .img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(($width) * 0.4);
+        }
+
+        .container{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: calc(($height) * 0.4);
+            width: calc(($width) * 2);
+            background: $gray;
+            // border: solid $secondary-color;
+            top: calc(($height) * 0.13);
+            left: calc(($width) * 0.1);
+            clip-path: polygon(74% 0, 100% 20%, 100% 99%, 0 100%, 0 0);
+
+            h2{
+                padding: 3rem 0;
+            }
+
+            .brick{
+                position: absolute;
+                width: calc(($width) * 0.7);
+                left: 0;
+                top: calc(($height) * 0.1);
+                margin: 1rem 1.3rem;
+                display: flex;
+                flex-direction: column;
+
+                table{
+                    // border: 0.02rem solid $secondary-color;
+                    width: calc(($width) * 1.2);
+                    position: relative;
+
+                    tr{
+                        background: rgba($dark-gray, 1);
+
+                        th{
+                            text-align: left;
+                            align-items: center;
+                            padding: 0.5rem;
+                            font-weight: 400;
+
+                            img{
+                                width: calc(($width) * 0.1);
+                            }
+                        }
+                        
+                        td{
+                            padding: 0.5rem;
+                        }
+
+                    }
+                }
+
+                button{
+                    width: calc(($width) * 1);
+                    margin: 2rem;
+                    padding: 0.5rem 0;
+                    font-weight: 600;
+                    outline: none;
+                    border: none;
+                    font: $font;
+                    background: rgba($accent-color, 0.3);
+                    color: rgba($secondary-color, 1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

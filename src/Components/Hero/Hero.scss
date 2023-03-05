@@ -1,0 +1,72 @@
+@import '../../App.scss';
+
+main{
+    position: relative;
+    height: $height;
+    background: rgba($primary-color, 1); 
+    background-image: url('../../assets/nnnoise.svg');
+    padding: 0 2rem;
+    
+    
+    .polka{
+            position: absolute;
+            height: $height;
+            width: $width;
+            top: 0;
+            
+            img{
+                position: absolute;
+                height: calc(($height) * 0.3);
+                width: calc(($width) * 0.2);
+                object-fit: contain;
+                opacity: 0.5;
+            }
+            
+            .one{
+                left: calc(($width) * -0.02);
+                rotate: 90deg;
+                height: calc(($height) * 0.2);
+                width: calc(($width) * 0.1);
+                top: calc(($height) * 0.1);
+            }
+            .two{
+                right: calc(($width) * -0.04);
+                bottom: calc(($height) * 0.07);
+                height: calc(($height) * 0.15);
+                rotate: 90deg;
+            }
+        .three{
+            height: calc(($height) * 0.1);
+            width: calc(($width) * 0.2);
+            top: calc(($height) * 0.13);
+            right: calc(($width) * 0.03);
+        }
+        
+    }
+    section{
+        width: $width;
+        height: calc(($height) * 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        aside{
+            color: $secondary-color;
+            position: relative;
+            z-index: 11;
+            
+            h1{
+                font-size: $extra-large-text;
+                margin: 0 0 1rem 0;
+                
+                span{
+                    color: $main-color;
+                }
+            }
+        }
+
+        .card{
+            width: calc(($width) * 0.4);
+        }
+    }
+}
