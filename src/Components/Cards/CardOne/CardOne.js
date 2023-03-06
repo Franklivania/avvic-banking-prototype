@@ -1,5 +1,6 @@
 import React from 'react'
 import './CardOne.scss'
+import 'animate.css'
 import dots from '../../../assets/dots.png'
 import nigeria from '../../../assets/nigeria.png'
 import usa from '../../../assets/usa.png'
@@ -7,7 +8,7 @@ import usa from '../../../assets/usa.png'
 const CardOne = () => {
   return (
     <div className='card'>
-        <div className="box">
+        <div className="box animate__bounceIn animate__delay-3s" >
             <img src={dots} alt="" className='img'/>
             <div className="container">
                 <h2>Faster <span>Transactions</span></h2>

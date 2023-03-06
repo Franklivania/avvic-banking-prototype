@@ -2,45 +2,52 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './SectionTwo.scss'
 import card from '../../assets/card.png'
-import playStore from '../../assets/playStore.svg'
-import appleStore from '../../assets/appleStore.svg'
 import Applink from '../AppLinks/Applink'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 
 const SectionTwo = () => {
   return (
     <section className='sectionTwo'>
         <aside>
-            <small>ADD MULTIPLE CARDS</small>
+            <Fade delay={500} damping={0.2}>
+                <Slide direction='left'>
 
-            <br />
-            <br />
+                    <small>ADD MULTIPLE CARDS</small>
 
-            <h2>
-                Sign up now <br />
-                Have an account with us.
-            </h2>
+                    <br />
+                    <br />
 
-            <br />
+                    <h2>
+                        Sign up now <br />
+                        Have an account with us.
+                    </h2>
 
-            <p>
-                So you can be able to link your multiple cards
-                to one account for easier and faster transactions.
-                You can choose to go physical or virtual!
-            </p>
+                    <br />
 
-            <br />
-            <br />
+                    <p>
+                        So you can be able to link your multiple cards
+                        to one account for easier and faster transactions.
+                        You can choose to go physical or virtual!
+                    </p>
 
-            <Applink />
+                    <br />
+                    <br />
 
-            <br />
-            <br />
+                    <Applink />
 
-            <Link to='/' className='next'> Learn More <i class="fa-solid fa-arrow-right"></i></Link>
+                    <br />
+                    <br />
+
+                    <Link to='/' className='next'> Learn More <i class="fa-solid fa-arrow-right"></i></Link>
+                </Slide>
+            </Fade>
         </aside>
-
-        <img src={card} alt="" />
+        <Fade delay={300}>
+            <Slide direction='right'>
+                <img src={card} alt="" />
+            </Slide>
+        </Fade>
     </section>
   )
 }
