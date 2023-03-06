@@ -11,12 +11,10 @@ const SectionThree = () => {
   return (
     <section className='sectionThree'>
         <Fade delay={500}>
-            <Slide direction='left' delay={200}>
-                <div className="image">
-                    <img src={qr} alt="" />
-                    <img src={transfer} alt="" id='two'/>
-                </div>
-            </Slide>
+            <div className="image">
+                <img src={qr} alt="" />
+                <img src={transfer} alt="" id='two'/>
+            </div>
         </Fade>
 
         <aside>
