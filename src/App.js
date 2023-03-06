@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App" onScroll={handleScroll}>
-      {/* <PageLoader /> */}
+      <PageLoader />
       <Router>
         <Routes>
           <Route path='/' element={<Landing />}/>
