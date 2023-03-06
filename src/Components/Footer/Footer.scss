@@ -1,0 +1,88 @@
+@import '../../App.scss';
+
+.footer{
+    width: $width;
+    // clip-path: polygon(0 28%, 100% 0, 100% 100%, 0% 100%);
+    background: $primary-color;
+    font-family: $font;
+    // padding: 15rem 1rem 2rem 1rem;
+    padding: 3rem;
+
+    section{
+        padding: 1rem;
+        border-bottom: 0.02rem solid $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        aside{
+            display: flex;
+            flex-direction: column;
+            color: $light-gray;
+            
+            a{
+                text-decoration: none;
+                color: $light-gray;
+            }
+
+            address{
+                font-family: $font;
+
+            }
+            .mail{
+                color: $accent-color;
+            }
+        }
+    }
+
+    .below{
+        width: $width;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        font-family: $font;
+        color: $light-gray;
+
+        img{
+            width: calc(($width) * 0.3);
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer{
+        width: $width;
+
+        section{
+            width: $width;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            aside{
+                width: $width;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 1rem 0;
+            }
+        }
+
+        .below{
+            width: $width;
+
+            .image{
+
+                img{
+                    width: calc(($width) * 0.7);
+                }
+            }
+        }
+    }
+}

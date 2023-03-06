@@ -4,6 +4,7 @@ import './SectionTwo.scss'
 import card from '../../assets/card.png'
 import playStore from '../../assets/playStore.svg'
 import appleStore from '../../assets/appleStore.svg'
+import Applink from '../AppLinks/Applink'
 
 
 const SectionTwo = () => {
@@ -31,10 +32,7 @@ const SectionTwo = () => {
             <br />
             <br />
 
-            <div className="download">
-                <a href=""><img src={playStore} alt="" /></a>
-                <a href=""><img src={appleStore} alt="" /></a>
-            </div>
+            <Applink />
 
             <br />
             <br />

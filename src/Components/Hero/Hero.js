@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
 import './Hero.scss'
 import polka from '../../assets/white-polka-dot.png'
 import CardOne from '../Cards/CardOne/CardOne'
@@ -7,7 +6,6 @@ import CardOne from '../Cards/CardOne/CardOne'
 const Hero = () => {
   return (
     <main>
-        <Navbar />
 
         <div className="polka">
             <img src={polka} alt=""  className='one'/>

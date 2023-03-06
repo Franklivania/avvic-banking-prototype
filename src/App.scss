@@ -36,3 +36,12 @@ $radius: 50%;
   font-family: $font;
   overflow-x: hidden;
 }
+
+::-webkit-scrollbar{
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background: $main-color;
+  border-radius: $border-radius;
+}
