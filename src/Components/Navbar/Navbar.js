@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
       <header className="navbar navbar-scrolled">
 
-        a<img src={logo} alt="" />
+        <img src={logo} alt="" />
 
         <aside>
           <NavItems />

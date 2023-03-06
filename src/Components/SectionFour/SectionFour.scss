@@ -8,7 +8,7 @@
     justify-content: space-evenly;
     width: $width;
     padding: 2rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     background: $light-gray;
 
     aside{
@@ -34,6 +34,22 @@
 
         .next{
             color: $accent-color;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sectionFour{
+        display: flex;
+        flex-direction: column;
+
+        aside{
+            width: $width;
+            margin: 1rem 0 0 0;
+        }
+
+        #relax{
+            display: none;
         }
     }
 }

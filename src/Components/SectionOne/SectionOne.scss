@@ -26,3 +26,15 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .sectionOne{
+        display: flex;
+        flex-direction: column;
+
+        aside{
+            width: $width;
+            margin: 1rem 0 0 0;
+        }
+    }
+}

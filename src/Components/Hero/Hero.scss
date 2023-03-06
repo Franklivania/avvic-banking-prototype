@@ -71,3 +71,28 @@ main{
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    main{
+        display: flex;
+        flex-direction: column;
+
+        section{
+            width: $width;
+
+            aside{
+                // width: $width;
+                margin: 1rem 0 0 0;
+
+                h1{
+                    font-size: calc(($large-text) * 1.3);
+                }
+            }
+
+            .card{
+                display: none;
+            }
+        }
+
+    }
+}

@@ -35,3 +35,16 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+
+    .sectionTwo{
+        display: flex;
+        flex-direction: column;
+
+        aside{
+            width: $width;
+            margin: 0 0 1rem 0;
+        }
+    }
+}

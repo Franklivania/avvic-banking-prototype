@@ -37,9 +37,9 @@ const SectionFour = () => {
 
         </aside>
 
-        <img src={relaxed} alt="" />
+        <img src={relaxed} alt="" id='relax'/>
 
-        <img src={dash} alt="" />
+        <img src={dash} alt="" id='dash'/>
     </section>
   )
 }
