@@ -1,0 +1,51 @@
+@import '../../App.scss';
+
+.sectionTwo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: $width;
+
+    aside{
+        // height: calc(($height) * 0.6);
+        display: flex;
+        flex-direction: column;
+        width: calc(($width) * 0.4);
+        margin: 0 4rem 0 0;
+
+        small{
+            color: $accent-color;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+        }
+
+        h2{
+            font-size: $large-text;
+            color: $main-color;
+        }
+
+        p{
+            font-size: $text-size;
+        }
+
+        .download{
+            a{
+                margin: 0 0.2rem;
+                img{
+                    filter: contrast(40%);
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover{
+                        filter: contrast(1);
+                    }
+                }
+            }
+        }
+
+        .next{
+            color: $accent-color;
+        }
+    }
+}

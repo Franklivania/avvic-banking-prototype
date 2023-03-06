@@ -1,0 +1,60 @@
+@import '../../App.scss';
+
+.sectionThree{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    width: $width;
+
+    .image{
+        width: calc(($width) * 0.5);
+        position: relative;
+
+        #two{
+            position: absolute;
+            top: calc(($height) * 0.05);
+            left: calc(($width) * 0.2);
+        }
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: calc(($width) * 0.4);
+
+        small{
+            color: $accent-color;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+        }
+
+        h2{
+            font-size: $large-text;
+            color: $main-color;
+        }
+
+        p{
+            font-size: $text-size;
+        }
+
+        .download{
+            a{
+                margin: 0 0.2rem;
+                img{
+                    filter: contrast(40%);
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover{
+                        filter: contrast(1);
+                    }
+                }
+            }
+        }
+
+        .next{
+            color: $accent-color;
+        }
+    }
+}

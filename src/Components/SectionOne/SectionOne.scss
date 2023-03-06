@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+.sectionOne{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    width: $width;
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(($width) * 0.5);
+
+        small{
+            color: $accent-color;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+        }
+
+        h2{
+            font-size: $large-text;
+            color: $main-color;
+        }
+    }
+}
