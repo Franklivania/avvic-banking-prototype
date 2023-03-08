@@ -3,7 +3,7 @@
 main{
     position: relative;
     height: $height;
-    background: rgba($primary-color, 1); 
+    // background: rgba($primary-color, 1); 
     // background-image: url('../../assets/nnnoise.svg');
     padding: 0 2rem;
     
@@ -20,6 +20,7 @@ main{
                 width: calc(($width) * 0.2);
                 object-fit: contain;
                 opacity: 0.5;
+                background-blend-mode: difference;
             }
             
             .one{
@@ -55,6 +56,7 @@ main{
             color: $secondary-color;
             position: relative;
             z-index: 11;
+            color: $gray;
             
             h1{
                 font-size: $extra-large-text;

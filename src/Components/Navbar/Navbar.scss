@@ -11,7 +11,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 999;
-    // background: rgba(($white-color), 1);
+    // background: rgba(($primary-color), 1);
     transition: all 0.5s ease-in;
 
     .navbar-scrolled{
@@ -39,8 +39,10 @@ header{
         font-size: $text-size;
         
         .link{
-            color: $secondary-color;
+            color: $primary-color;
             text-decoration: none;
+            font-weight: 700;
+            font-size: $text-size;
             
             &:hover{
                 color: $main-color;
@@ -69,7 +71,7 @@ header{
     }
 }
 .navbar-scrolled{
-    background: $primary-color;
+    background: $secondary-color;
 }
 
 
