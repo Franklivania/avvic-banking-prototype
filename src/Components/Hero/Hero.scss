@@ -61,10 +61,15 @@ main{
             h1{
                 font-size: $extra-large-text;
                 margin: 0 0 1rem 0;
+                color: $main-color;
                 
                 span{
                     color: $main-color;
                 }
+            }
+
+            p{
+                color: $light-gray;
             }
         }
 

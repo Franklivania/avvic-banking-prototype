@@ -35,6 +35,10 @@
         aside{
             width: $width;
             margin: 1rem 0 0 0;
+
+            h2{
+                font-size: calc(($text-size) * 1.4);
+            }
         }
     }
 }
